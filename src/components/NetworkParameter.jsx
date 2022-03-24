@@ -11,7 +11,7 @@ const NetworkParameter = (props) => {
                     <DonutChart title="Minumum Platform Version" value={props.data.minimumPlatformVersion} singleColor="#df0a1b" valueLabel="v"/>
                 </Column>
                   <Column lg={6}>
-                    <DonutChart title="Max Transaction Size" value={props.data.maxTransactionSize/(1024 * 1024)} singleColor="#df0a1b" valueLabel="MB"/>
+                    <DonutChart title="Max Transaction Size" value={props.data.maxTransactionSize/(1024 * 1024).toFixed(2)} singleColor="#df0a1b" valueLabel="MB"/>
                 </Column>
             
             </Row>

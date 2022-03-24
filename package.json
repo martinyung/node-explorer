@@ -28,6 +28,7 @@
     "redux": "^4.0.4",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
+    "sass": "^1.49.9",
     "tree-kill": "^1.2.2",
     "yarn": "^1.22.4"
   },

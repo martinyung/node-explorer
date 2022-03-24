@@ -578,7 +578,9 @@ class TransactionExplorer extends Component{
                                                                                     <div className="break-word">{output.type}</div>
                                                                                     <div className="break-word" style={{fontWeight: "normal", fontSize: 13}}>{output.stateRef.txhash} ({output.stateRef.index})</div>
                                                                                 </div>
-                                                                                {this.renderJson(output.state, 0)}
+                                                                                <div className="break-word">
+                                                                                    {this.renderJson(output.state, 0)}
+                                                                                </div>
                                                                             </div>    
                                                                         )
                                                                     }):<div className="content stripe"></div>
