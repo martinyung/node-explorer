@@ -547,7 +547,9 @@ class TransactionExplorer extends Component{
                                                                                         <div className="break-word">{input.type}</div>
                                                                                         <div className="break-word" style={{fontWeight: "normal", fontSize: 13}}>{input.stateRef.txhash} ({input.stateRef.index})</div>
                                                                                     </div>
-                                                                                    {this.renderJson(input.state, 0)}
+                                                                                    <div className="break-word">
+                                                                                        {this.renderJson(input.state, 0)}
+                                                                                    </div>
                                                                                 </div>
                                                                             )
                                                                         }):
@@ -592,7 +594,7 @@ class TransactionExplorer extends Component{
                                                             
                                                                     {
                                                                         trnx.signers && trnx.signers.length > 0?
-                                                                        trnx.signers.map((sig, idx) => {
+                                                                        new set(trnx.signers).map((sig, idx) => {
                                                                             return (
                                                                                 <div className="signature-label" key={idx}>{sig.signature.bytes}<strong>({sig.partyName})</strong></div>
                                                                             )
