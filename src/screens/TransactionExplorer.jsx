@@ -594,7 +594,7 @@ class TransactionExplorer extends Component{
                                                             
                                                                     {
                                                                         trnx.signers && trnx.signers.length > 0?
-                                                                        new set(trnx.signers).map((sig, idx) => {
+                                                                        new Set(trnx.signers).map((sig, idx) => {
                                                                             return (
                                                                                 <div className="signature-label" key={idx}>{sig.signature.bytes}<strong>({sig.partyName})</strong></div>
                                                                             )
